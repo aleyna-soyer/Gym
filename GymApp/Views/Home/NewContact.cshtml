@@ -1,0 +1,16 @@
+﻿@model GymApp.Models.Contact
+<form class="form-group" method="post">
+
+    <b>Name</b>
+    @Html.TextBoxFor(x=>x.Name, new{@class="form-control"})
+    <br />
+    <b>Surname</b>
+    @Html.TextBoxFor(x=>x.Surname, new{@class="form-control"})
+    <br />
+    <b>Phone</b>
+    @Html.TextBoxFor(x=>x.Phone, new{@class="form-control"})
+    <br />
+
+    <button class="btn btn-info">Submit</button>
+
+</form>

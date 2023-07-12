@@ -1,0 +1,28 @@
+﻿@using GymApp.Models
+@model List<Member>
+
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Status</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.Name</td>
+            <td>@item.Surname</td>
+            <td>@item.Status</td>
+            <td><a href="/Member/DeleteMember/@item.ID" class="btn btn-danger">Delete</a></td>
+            <td><a href="/Member/GetMember/@item.ID" class="btn btn-success">Update</a></td>
+
+
+        </tr>
+    }
+</table>
+<a href="/Member/NewMember/" class="btn btn-primary">New Member</a>

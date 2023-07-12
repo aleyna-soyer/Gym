@@ -1,0 +1,17 @@
+﻿@model GymApp.Models.Member
+@using (Html.BeginForm("UpdateMember", "Member", FormMethod.Post))
+{
+    <b>Member ID</b>
+    @Html.TextBoxFor(x=>x.ID, new{@class="form-control"})
+    <br />
+    <b>Name</b>
+    @Html.TextBoxFor(x=>x.Name, new{@class="form-control"})
+    <br />
+    <b>Surname</b>
+    @Html.TextBoxFor(x=>x.Surname, new{@class="form-control"})
+    <br />
+    <b>Status</b>
+    @Html.TextBoxFor(x=>x.Status, new{@class="form-control"})
+    <br />
+    <button class="btn btn-default" style="background-color:coral; color:darkred">Update Member</button>
+}
