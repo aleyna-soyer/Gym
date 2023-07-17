@@ -1,9 +1,11 @@
 ﻿using GymApp.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 
 namespace GymApp.Controllers
 {
+    
     public class EmployeeController : Controller
     {
         private readonly Context _context;

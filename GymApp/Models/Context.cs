@@ -17,6 +17,8 @@ namespace GymApp.Models
         public DbSet<Member> members { get; set; }
         public DbSet<Employee> employees { get; set; }
         public DbSet<Contact> contacts { get; set; }
+        public DbSet<Manager> managers { get; set; }
+        
 
     }
 }

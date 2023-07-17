@@ -8,5 +8,6 @@
         
         //0--Active 1--Passive
         public int Status { get; set; }
+        public string Password { get; set; }
     }
 }

@@ -2,8 +2,10 @@
 using GymApp.Models;
 using System.Linq;
 
+
 namespace GymApp.Controllers
 {
+    
     public class MemberController : Controller
     {
         private readonly Context _context;
