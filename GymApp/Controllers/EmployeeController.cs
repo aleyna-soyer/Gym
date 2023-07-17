@@ -18,6 +18,7 @@ namespace GymApp.Controllers
             var values = _context.employees.ToList();
             return View(values);
         }
+        
         [HttpGet]
         public IActionResult NewEmployee()
         {
